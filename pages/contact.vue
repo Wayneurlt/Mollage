@@ -310,36 +310,30 @@ export default {
     gsap.from(".contact-hero-content", {
       duration: 1,
       y: 50,
-      opacity: 0,
-      delay: 0.2,
       ease: "power3.out",
     });
     gsap.from(".contact-info-content", {
       scrollTrigger: { trigger: ".contact-info-content", start: "top 85%" },
       duration: 1,
       x: -50,
-      opacity: 0,
       ease: "power3.out",
     });
     gsap.from(".contact-form-wrapper", {
       scrollTrigger: { trigger: ".contact-form-wrapper", start: "top 85%" },
       duration: 1,
       x: 50,
-      opacity: 0,
       ease: "power3.out",
     });
     gsap.from(".map-section", {
       scrollTrigger: { trigger: ".map-section", start: "top 90%" },
       duration: 1.2,
       y: 50,
-      opacity: 0,
       ease: "power3.out",
     });
 
     ScrollTrigger.batch(".faq-item", {
       onEnter: (batch) =>
         gsap.from(batch, {
-          opacity: 0,
           y: 30,
           stagger: 0.1,
           ease: "power3.out",

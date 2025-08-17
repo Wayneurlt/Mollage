@@ -421,21 +421,17 @@ export default {
     gsap.from(".blog-hero-content", {
       duration: 1,
       y: 50,
-      opacity: 0,
-      delay: 0.2,
       ease: "power3.out",
     });
     gsap.from(".featured-post-section", {
       scrollTrigger: { trigger: ".featured-post-section", start: "top 80%" },
       duration: 1,
       y: 50,
-      opacity: 0,
       ease: "power3.out",
     });
     ScrollTrigger.batch(".blog-card", {
       onEnter: (batch) =>
         gsap.from(batch, {
-          opacity: 0,
           y: 50,
           stagger: 0.1,
           ease: "power3.out",

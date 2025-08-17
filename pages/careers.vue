@@ -390,8 +390,6 @@ export default {
     gsap.from(".careers-hero-content", {
       duration: 1,
       y: 50,
-      opacity: 0,
-      delay: 0.2,
       ease: "power3.out",
     });
 
@@ -403,7 +401,6 @@ export default {
           toggleActions: "play none none none",
         },
         y: 40,
-        opacity: 0,
         duration: 0.8,
         delay: i * 0.1,
         ease: "power3.out",
@@ -418,7 +415,6 @@ export default {
           toggleActions: "play none none none",
         },
         scale: 0.9,
-        opacity: 0,
         duration: 0.8,
         delay: i * 0.1,
         ease: "power3.out",

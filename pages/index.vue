@@ -182,16 +182,12 @@ export default {
     gsap.from(".hero-content", {
       duration: 1,
       y: 50,
-      opacity: 0,
-      delay: 0.2,
       ease: "power3.out",
     });
 
     gsap.from(".hero-image", {
       duration: 1.2,
       x: 50,
-      opacity: 0,
-      delay: 0.4,
       ease: "power3.out",
     });
 
@@ -203,7 +199,6 @@ export default {
           toggleActions: "play none none none",
         },
         y: 50,
-        opacity: 0,
         duration: 0.8,
         delay: i * 0.1,
         ease: "power3.out",
@@ -218,7 +213,6 @@ export default {
           toggleActions: "play none none none",
         },
         y: 30,
-        opacity: 0,
         duration: 0.6,
         delay: i * 0.1,
         ease: "back.out(1.2)",

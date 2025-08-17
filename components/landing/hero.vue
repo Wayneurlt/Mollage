@@ -63,7 +63,8 @@
           <div>
             <p class="text-sm font-medium text-gray-700">
               Trusted by 50+ brands
-            </p>
+            </p> 
+            
             <div class="flex items-center mt-1">
               <Icon
                 v-for="i in 5"
@@ -145,16 +146,12 @@ export default {
     gsap.from(".hero-content", {
       duration: 1,
       y: 50,
-      opacity: 50,
-      delay: 0.2,
       ease: "power3.out",
     });
 
     gsap.from(".hero-image", {
       duration: 1.2,
       x: 50,
-      opacity: 50,
-      delay: 0.4,
       ease: "power3.out",
     });
   },

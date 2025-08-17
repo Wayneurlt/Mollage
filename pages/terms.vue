@@ -182,8 +182,6 @@ export default {
     gsap.from(".policy-content", {
       duration: 1.2,
       y: 30,
-      opacity: 0,
-      delay: 0.2,
       ease: "power3.out",
     });
   },
